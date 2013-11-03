@@ -1,0 +1,17 @@
+
+<h1>All pictures</h1>
+
+<a href="http://localhost:3000/new_picture_form"> Create New Picture </a>
+<ul>
+<% @return.each do |p| %> 
+<li>
+	<img width="250" src=<%= p.source%>>
+	<a href="http://localhost:3000/delete_picture/<%= p.id %>">Delete this picture</a>
+	<a href="http://localhost:3000/edit_picture_form/<%= p.id %>">Edit this picture</a>
+	<p><%= p.caption %></p>
+</li>
+
+<% end %>
+</ul>
+
+
