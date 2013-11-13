@@ -1,3 +1,4 @@
+require 'twilio-ruby'
 class PicturesController < ApplicationController
   
   def show
@@ -44,6 +45,7 @@ class PicturesController < ApplicationController
     p.source = url
     p.save
     flash[:notice] = 'Row Added succesfully'
+     
   end
   
 end

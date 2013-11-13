@@ -1,0 +1,19 @@
+<h2>Add A New Picture</h2>
+
+<%= form_tag(posts_url) do %>
+
+  <div >
+    <%= label_tag  "Caption:" %>
+    <%= text_field_tag :caption %>
+  </div>
+
+  <div >
+    <%= label_tag  "Image URL:" %>
+    <%= text_field_tag :source %>
+  </div>
+
+   <%= submit_tag "Create Picture" %>
+    
+  
+
+<% end %>
